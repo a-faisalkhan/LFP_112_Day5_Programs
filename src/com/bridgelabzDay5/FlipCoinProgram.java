@@ -19,8 +19,10 @@ public class FlipCoinProgram {
 
 		for (int cnt = 0; cnt < count; cnt++) {
 			if (Math.random() < 0.5) {
+				//System.out.println("Tail Win");
 				tailCount++;
 			} else {
+				//System.out.println("Head Win");
 				headCount++;
 			}
 		}
