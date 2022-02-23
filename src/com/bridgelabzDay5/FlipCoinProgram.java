@@ -14,6 +14,8 @@ public class FlipCoinProgram {
 		Scanner sc = new Scanner(System.in);
 
 		int count = sc.nextInt();
+		//double input = sc.nextDouble(); 
+		//String strInput = sc.nextLine(); 
 
 		int headCount = 0, tailCount = 0;
 
@@ -32,6 +34,9 @@ public class FlipCoinProgram {
 		String headPercentage = decimalFormat.format(((double) headCount / count) * 100);
 		String tailPercentage = decimalFormat.format(((double) tailCount / count) * 100);
 
+		//double headPercentage = ((double) headCount / count) * 100; //It will print value in many decimals
+		//double tailPercentage = ((double) tailCount / count) * 100; 
+		
 		System.out.println("Head Percentage : " + headPercentage + "%");
 		System.out.println("Tail Percentage : " + tailPercentage + "%");
 
