@@ -12,7 +12,11 @@ public class LeapYear {
 		
 		year = sc.nextInt();
 		
-		if (year != 0) {
+//		if (year > 1000 && year <9999) {
+		
+		//if (year != 0) {
+		
+		if (year >= 1000 && year <= 9999) {
 			
 			if (year % 400 == 0)
 				System.out.println(year + " is a leap year");
@@ -30,8 +34,8 @@ public class LeapYear {
 				System.out.println(year + " is not a leap year");
 			
 		} else
-			System.out.println("Year zero does not exist ");
-		sc.close(); 
+			System.out.println("Enter year between 1000 to 9999");
+			sc.close(); 
 
 	}
 
